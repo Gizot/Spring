@@ -1,9 +1,8 @@
-package com.allianz.example.model;
+package com.allianz.example.model.requestDTO;
 
 import com.allianz.example.database.entity.ProductEntity;
 import com.allianz.example.util.BaseDTO;
-import com.allianz.example.util.dbutil.BaseEntity;
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
 import lombok.Data;
 
 import java.math.BigDecimal;

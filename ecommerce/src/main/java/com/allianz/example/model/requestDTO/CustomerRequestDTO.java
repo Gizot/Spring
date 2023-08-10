@@ -1,20 +1,18 @@
-package com.allianz.example.model;
+package com.allianz.example.model.requestDTO;
 
 import com.allianz.example.database.entity.PersonEntity;
 import com.allianz.example.util.BaseDTO;
-import com.allianz.example.util.dbutil.BaseEntity;
-import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class CustomerDTO extends BaseDTO {
+public class CustomerRequestDTO extends BaseDTO {
     private PersonEntity person;
     private Boolean isCorporate;
     private String companyName;
     private String taxNumber;
     private String taxOffice;
-    private List<OrderDTO> orderList;
+    private List<OrderRequestDTO> orderList;
 
 }
